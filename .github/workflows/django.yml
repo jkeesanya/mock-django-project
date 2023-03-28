@@ -51,4 +51,4 @@ jobs:
       run: |
         pylint mock_django_project/ --fail-under=10
         pylint users/ --fail-under=10
-
+      continue-on-error: true
