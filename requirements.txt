@@ -10,6 +10,8 @@ exceptiongroup==1.1.1
 filelock==3.10.7
 identify==2.5.22
 iniconfig==2.0.0
+mypy==1.1.1
+mypy-extensions==1.0.0
 nodeenv==1.7.0
 packaging==23.0
 platformdirs==3.2.0
@@ -21,5 +23,6 @@ pytz==2023.2
 PyYAML==6.0
 sqlparse==0.4.3
 tomli==2.0.1
+typing_extensions==4.5.0
 tzdata==2023.2
 virtualenv==20.21.0
