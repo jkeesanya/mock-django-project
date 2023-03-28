@@ -30,3 +30,11 @@ jobs:
         pytest
     - name: Some echo
       run: echo some shit
+
+  test:
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: run test
+        run: pytest
+
