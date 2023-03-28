@@ -49,6 +49,6 @@ jobs:
         pip install -r requirements.txt
     - name: Pylint
       run: |
-        pylint mock_django_project/
-        pylint users/
+        pylint mock_django_project/ --fail-under=10
+        pylint users/ --fail-under=10
 
