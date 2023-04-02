@@ -9,3 +9,48 @@ repos:
   rev: 'v1.1.1'
   hooks:
   -   id: mypy
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: trailing-whitespace
+    stages:
+    - commit
+  - id: double-quote-string-fixer
+    stages:
+    - commit
+  - id: end-of-file-fixer
+    stages:
+    - commit
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.1.0
+  hooks:
+  - id: trailing-whitespace
+    stages:
+    - commit
+  - id: double-quote-string-fixer
+    stages:
+    - commit
+  - id: end-of-file-fixer
+    exclude: \.svg$
+    stages:
+    - commit
+
+- repo: https://github.com/pre-commit/pygrep-hooks
+  rev: v1.9.0
+  hooks:
+  - id: python-check-blanket-noqa
+  - id: python-check-mock-methods
+    stages:
+    - commit
+
+- repo: https://github.com/PyCQA/isort
+  rev: 5.12.0
+  hooks:
+    - id: isort
+
+- repo: https://github.com/MarcoGorelli/absolufy-imports
+  rev: v0.3.1
+  hooks:
+    - id: absolufy-imports
