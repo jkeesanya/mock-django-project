@@ -1,14 +1,17 @@
-repos:
-- repo: https://github.com/ambv/black
-  rev: 23.1.0
-  hooks:
-  - id: black
-    language_version: python3.10
+default_stages:
+  - commit
 
+repos:
 - repo: https://github.com/pre-commit/mirrors-mypy
   rev: 'v1.1.1'
   hooks:
   -   id: mypy
+
+- repo: https://github.com/psf/black
+  rev: 23.1.0
+  hooks:
+  - id: black
+    language_version: python3.10
 
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.4.0
@@ -16,9 +19,9 @@ repos:
   - id: trailing-whitespace
     stages:
     - commit
-  - id: double-quote-string-fixer
-    stages:
-    - commit
+#  - id: double-quote-string-fixer
+#    stages:
+#    - commit
   - id: end-of-file-fixer
     stages:
     - commit
