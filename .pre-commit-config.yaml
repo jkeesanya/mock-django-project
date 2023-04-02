@@ -23,20 +23,6 @@ repos:
     stages:
     - commit
 
-- repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.1.0
-  hooks:
-  - id: trailing-whitespace
-    stages:
-    - commit
-  - id: double-quote-string-fixer
-    stages:
-    - commit
-  - id: end-of-file-fixer
-    exclude: \.svg$
-    stages:
-    - commit
-
 - repo: https://github.com/pre-commit/pygrep-hooks
   rev: v1.9.0
   hooks:
