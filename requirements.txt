@@ -1,3 +1,4 @@
+absolufy-imports==0.3.1
 asgiref==3.6.0
 astroid==2.15.1
 attrs==22.2.0
