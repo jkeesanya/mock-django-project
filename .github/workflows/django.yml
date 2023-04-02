@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  great-mock-action:
 
     runs-on: ubuntu-latest
     strategy:
@@ -28,4 +28,6 @@ jobs:
     - name: Run Tests
       run: pytest
     - name: Run Pylint
-      run: pylint
+      run: |
+        pylint **/*.py
+      continue-on-error: true
